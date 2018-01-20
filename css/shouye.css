@@ -1,0 +1,259 @@
+body, div, p, ul, li, img, h3, h4 {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+#up {
+  width: 50px;
+  height: 250px;
+  position: fixed;
+  right: 15px;
+  bottom: 36px;
+  background: #f7f7f7; }
+  #up div {
+    box-sizing: border-box; }
+  #up #d1 {
+    width: 50px;
+    height: 50px;
+    background: url(../img/shouye/1.png);
+    border-bottom: 1px solid #e3e3e3; }
+  #up #d2 {
+    width: 50px;
+    height: 50px;
+    background: url(../img/2.png);
+    background-size: 50px 50px;
+    border-bottom: 1px solid #e3e3e3; }
+  #up #d3 {
+    width: 50px;
+    height: 50px;
+    background: url(../img/shouye/1.png);
+    background-position: 200px 150px;
+    border-bottom: 1px solid #e3e3e3; }
+  #up #d4 {
+    width: 50px;
+    height: 50px;
+    background: url(../img/shouye/1.png);
+    background-position: 150px 150px;
+    border-bottom: 1px solid #e3e3e3; }
+  #up #d5 {
+    width: 50px;
+    height: 50px;
+    background: url(../img/shouye/1.png);
+    background-position: 100px 150px; }
+
+#top {
+  height: 90px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0; }
+  #top img {
+    float: left;
+    margin: 10px 0 0 20px; }
+  #top div {
+    margin-left: 60px;
+    height: 90px;
+    float: left; }
+    #top div ul {
+      float: left; }
+    #top div li {
+      float: left;
+      text-align: center; }
+      #top div li:hover span {
+        background: url(../img/3.png);
+        transform: rotate(-180deg);
+        transition: 1s; }
+      #top div li:hover a {
+        color: #ec642b;
+        transition: color 0.6s ease-in-out !important; }
+    #top div .a, #top div .b {
+      float: left;
+      width: 30px;
+      height: 30px;
+      margin: 30px 0 0 40px;
+      display: inline-block;
+      background: url(../img/shouye/2.png); }
+    #top div .b {
+      background: url(../img/shouye/3.png); }
+    #top div .c {
+      float: left;
+      width: 80px;
+      height: 30px;
+      margin: 30px 0 0 20px;
+      display: inline-block;
+      background: url(../img/shouye/4.png); }
+    #top div .p1 {
+      margin-left: 4px;
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background: url(../img/b2.png); }
+    #top div #b, #top div #c {
+      width: 90px;
+      height: 90px; }
+    #top div #a {
+      width: 140px;
+      height: 90px;
+      text-align: center;
+      display: inline-block; }
+    #top div a {
+      text-decoration: none;
+      color: white;
+      font-size: 12px;
+      line-height: 90px; }
+
+#box {
+  width: 100%;
+  height: 780px;
+  position: relative; }
+
+section {
+  width: 100%;
+  height: 280px;
+  background: #f7f7f7;
+  padding: 30px 0 0 20px;
+  box-sizing: border-box; }
+  section #se1 {
+    width: 310px;
+    height: 220px;
+    background: white;
+    text-align: center;
+    padding-top: 26px;
+    box-sizing: border-box;
+    float: left;
+    border-right: solid 1px #eee;
+    transform: scale(0.8);
+    transition: 1s; }
+    section #se1:hover {
+      transform: scale(1.1);
+      transition: 1s; }
+    section #se1 p {
+      color: #434343; }
+    section #se1 #s1 {
+      font-size: 18px; }
+    section #se1 #s2 {
+      padding-top: 14px;
+      box-sizing: border-box;
+      font-size: 14px;
+      padding-bottom: 25px; }
+
+#section2 {
+  box-sizing: border-box;
+  padding-left: 35px;
+  height: 230px;
+  width: 100%; }
+  #section2 img {
+    width: 140px;
+    height: 140px;
+    margin-right: 26px; }
+  #section2 #s11, #section2 #s22 {
+    margin-top: 40px; }
+  #section2 #s2 {
+    float: right;
+    padding-left: 50px; }
+    #section2 #s2 #img1 {
+      display: block;
+      width: 300px;
+      height: 80px;
+      margin-right: 50px;
+      margin-top: 40px; }
+    #section2 #s2 #img2 {
+      display: block;
+      width: 290px;
+      height: 40px;
+      margin-top: 20px;
+      margin-right: 50px; }
+  #section2 #none {
+    width: 300px;
+    height: 400px;
+    background: #f5f7fa;
+    position: fixed;
+    left: 350px;
+    border-radius: 10px;
+    display: none;
+    top: 60px; }
+    #section2 #none #D1 {
+      width: 300px;
+      height: 50px;
+      border-bottom: 1px solid #eeeeee; }
+    #section2 #none #nP1 {
+      width: 240px;
+      height: 50px;
+      display: inline-block;
+      color: #7e7e7e;
+      box-sizing: border-box;
+      line-height: 50px;
+      padding-left: 15px; }
+    #section2 #none #nP2 {
+      margin-left: 30px;
+      color: #dcdee0; }
+    #section2 #none #D2 {
+      height: 65px;
+      width: 300px;
+      text-align: center;
+      padding-top: 18px;
+      box-sizing: border-box; }
+      #section2 #none #D2 p {
+        color: #7e7e7e;
+        font-size: 12px;
+        margin-bottom: 4px; }
+      #section2 #none #D2 #weixin {
+        width: 250px;
+        height: 250px;
+        margin-left: 26px;
+        margin-top: 20px; }
+  #section2 #s1 {
+    float: left;
+    margin-right: 55px; }
+    #section2 #s1 span {
+      color: #7e7e7e;
+      font-size: 14px;
+      font-weight: 900;
+      height: 94px;
+      line-height: 94px; }
+    #section2 #s1 li {
+      font-size: 12px;
+      margin-bottom: 22px; }
+      #section2 #s1 li:hover a {
+        color: #eb6118; }
+      #section2 #s1 li a {
+        color: #7e7e7e; }
+    #section2 #s1 img {
+      display: block;
+      float: left; }
+
+#footer {
+  padding-left: 34px;
+  height: 140px;
+  background: #4a4a4a; }
+  #footer #f1 {
+    height: 70px; }
+    #footer #f1 #f11 {
+      float: left; }
+      #footer #f1 #f11 a {
+        text-decoration: none;
+        margin-right: 10px;
+        color: white;
+        font-size: 12px;
+        line-height: 70px; }
+    #footer #f1 #f12 {
+      float: left;
+      padding-left: 80px; }
+      #footer #f1 #f12 a {
+        line-height: 70px;
+        text-decoration: none;
+        padding: 0 10px;
+        border-right: 1px solid #e2ffe2;
+        color: white;
+        font-size: 12px; }
+  #footer #f2 {
+    height: 70px; }
+    #footer #f2 img {
+      width: 90px;
+      height: 34px;
+      margin-right: 18px; }
+    #footer #f2 a {
+      padding-left: 360px;
+      text-decoration: none;
+      color: white;
+      font-size: 12px; }

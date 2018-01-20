@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册账户-青橙手机</title>
+	<link rel="stylesheet" href="css/register.css"/>
+</head>
+<body>
+	<div id="top">
+		<img src="img/login/icon.png" alt="">
+	</div>
+	<div id="footer">
+		<div id="f1">
+			<div id="ff1">
+				<span id="sp1">注册青橙帐户</span>
+				<span id="sp2">注册成功即送2000积分</span>
+			</div>
+			<p id="hint"></p>
+			<input type="text" id="txt1" class="txt"  placeholder="注册手机号">
+			<input type="password" id="txt2" class="txt" placeholder="登录密码(长度在8-15之间)">
+			<input type="password" id="txt3" class="txt" placeholder="确认密码">
+			<div id="dd2">
+				<input type="text" id="txt1" class="t1" placeholder="短信验证码">
+				<input type="button" id="btn" value="获取短信验证码" >
+			</div>
+			<input type="checkbox" id="ch1">
+			<span id="sa3">我已阅读并同意《青橙手机用户注册协议》</span>
+			<input type="text" id="txt5" value="立即注册">
+		</div>
+
+		<div id="last">
+			<a href="">青橙官网</a>
+			<a href="">青橙论坛</a>
+			<a href="">联系我们</a>
+			<span>青橙公司版权所有-沪ICP备12006100号</span>
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+function $1(id){
+	return document.getElementById(id);
+}
+window.onload=function(){
+	$1("txt1").onblur=function(){
+		var regPhone=/^1(3|4|5|7|8|9)\d{9}$/;
+		var phoneId=$1("txt1").value;
+		if(!regPhone.test(phoneId)){
+			$1("hint").style.color="#a94442";
+			$1("hint").style.cssText="color:#a94442;font-size:12px;";
+			$1("hint").innerHTML="无效手机号码！";
+			return;
+		}
+	}
+}
+</script>

@@ -1,0 +1,22 @@
+{
+  "name": "xiangmu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangciaoning521/xiangmu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wangciaoning521/xiangmu/issues"
+  },
+  "homepage": "https://github.com/wangciaoning521/xiangmu#readme",
+  "devDependencies": {
+    "gulp-sass": "^3.1.0"
+  }
+}

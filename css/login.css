@@ -1,0 +1,110 @@
+body, div, p, ul, li, img, h3, h4 {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+#top {
+  display: flex;
+  align-items: center;
+  padding-left: 176px;
+  box-sizing: border-box;
+  height: 66px;
+  border-bottom: 1px solid #d9d9d9; }
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  padding-top: 20px;
+  box-sizing: border-box;
+  background: #f2f2f2; }
+  #footer #ss {
+    display: flex; }
+  #footer img {
+    width: 611px;
+    height: 509px; }
+  #footer #div1 {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    width: 326px;
+    height: 507px;
+    border: 1px solid #dcdcdc;
+    box-sizing: border-box; }
+    #footer #div1 h4 {
+      padding-left: 65px;
+      box-sizing: border-box;
+      color: #ff7e00;
+      font-size: 22px;
+      margin: 30px 0 20px;
+      font-weight: 100; }
+    #footer #div1 #txt {
+      margin-left: 45px;
+      width: 240px;
+      margin-bottom: 6px;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      border-radius: 4px;
+      padding: 6px 12px;
+      box-sizing: border-box;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      color: #555;
+      background-color: #fff; }
+    #footer #div1 #btn {
+      margin-left: 45px;
+      color: #fff;
+      height: 40px;
+      width: 240px;
+      background-color: #f0ad4e;
+      border: none;
+      border-radius: 6px; }
+    #footer #div1 p {
+      padding-left: 45px;
+      color: #5b5b5b;
+      font-size: 12px;
+      line-height: 64px; }
+    #footer #div1 #lo {
+      padding-left: 45px;
+      padding-bottom: 6px;
+      display: flex; }
+      #footer #div1 #lo span {
+        color: #5b5b5b;
+        font-size: 12px; }
+      #footer #div1 #lo #ig {
+        border-right: 1px solid #895b89; }
+      #footer #div1 #lo img {
+        width: 16px;
+        height: 16px;
+        padding: 0 8px; }
+  #footer #dash {
+    height: 1px;
+    border-bottom: 1px dashed #dcdcdc; }
+  #footer #btn1 {
+    margin-top: 34PX;
+    margin-left: 45px;
+    color: #333333;
+    height: 40px;
+    width: 240px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    background-color: #fff;
+    border: 1px solid #CCCCCC;
+    border-radius: 6px; }
+  #footer #sp {
+    margin-top: 8px;
+    margin-left: 110px;
+    color: #5b5b5b;
+    font-size: 12px; }
+
+#last {
+  margin-top: 2px;
+  font-size: 12px; }
+  #last a {
+    text-decoration: none;
+    color: #2ea7e0;
+    padding: 0 12px;
+    border-right: 1px solid #d9cfcf; }
+  #last span {
+    color: #999999; }
