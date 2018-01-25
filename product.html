@@ -9,7 +9,7 @@
 <body>
 	<div id="top">
 		<ul id="left">
-			<li><a href="#">青橙官网</a></li>
+			<li><a href="http://localhost/xiangmu/shouye.html">青橙官网</a></li>
 			<li><a href="#">品牌</a></li>
 			<li><a href="#">产品</a></li>
 			<li><a href="#">活动</a></li>
@@ -37,13 +37,14 @@
 	</header>
 	<section>
 		<div id="A1">
-			<div class="first">
+			<!-- <div class="first">
 				<img src="img/25.png" alt=""  title="VOGA V激光投影手机">
 				<p class="f1">VOGA V激光投影手机...</p>
 				<p class="f2">无需对焦 高清投影</p>
 				<p class="f3">￥3999</p>
 				<div class="zzc"></div>
-			</div>
+			</div> -->
+			<!--
 			<div class="first">
 				<img src="img/7.png" alt="" title="青橙C3">
 				<p class="f1">青橙C3</p>
@@ -80,7 +81,7 @@
 				<p class="f3">￥499</p>
 				<div class="zzc"></div>
 			</div>
-			
+			-->
 		</div>
 	</section>
 	<div id="refund">
@@ -171,6 +172,23 @@
 </html>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript">
+$(function(){
+	$.ajax({
+		type:"get",
+		url:"getGoodsList.php",
+		success:function(data){
+			showgoodsList(data);
+		},
+		dataType:"json"
+	});
+});
+function showgoodsList(datas){
+	let $box=$("#A1");
+	for(let i=0;i<datas.length;i++){	
+		let str="<div class='first'><img src='"+datas[i].goodsImg+"'><p class='f1'>"+datas[i].goodsName+"</p><p class='f2'>"+datas[i].goodsType+"</p><p class='f3'>￥"+datas[i].goodsPrice+"</p><div class='zzc'></div></div>";
+			$box.append(str);
+	}
+}
 $(function(){
 	$("#WeChat").mouseenter(function(){
 		$("#none").css({"display":"block"});

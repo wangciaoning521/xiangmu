@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+body,div,p,ul,li,img,h3,h4{
+	margin:0;
+	padding:0;
+	list-style:none;
+	
+}
+ul{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+#up{
+	position:fixed;
+	right:5px;
+	bottom:56px;
+	
+	display:none;
+	width:40px;
+	height:160px;
+	border:1px solid #dddddd;
+	#d1,#d2,#d3,#d4,#d5{
+		width:40px;
+		height:40px;
+		
+	}
+	#d1{
+		background:white url(../img/xbt.png);
+		background-position:121px -3px;
+	}
+	#d1:hover{
+		background-position:120px 42px;
+	}
+	#d2{
+		background:white url(../img/2.png);
+	}
+	#d2:hover{
+		background:white url(../img/xbt.png);
+		background-position:41px 42px;
+	}
+	#d3{
+		background:white url(../img/6.png);
+		background-position:121px -3px;
+	}
+	#d4{
+		background:white url(../img/xbt.png);
+		background-position:82px -3px;
+		border-bottom:1px solid #dddddd;
+	}
+	#d4:hover{
+		background-position:81px 42px;
+	}
+	#d5{
+		background:white url(../img/xbt.png);
+		background-position:160px 31px;
+	}
+}
+
+section{
+	width:100%;
+	background:#f4f5f9;
+	padding:20px 45px 0;
+	box-sizing:border-box;
+	.first{
+		height:90px;
+		background:pink;
+		margin-bottom:20px;
+	}
+	.second{
+		border:1px solid #e3e3e3;
+		border-radius:8px;
+		box-sizing:border-box;
+		overflow:hidden;
+		background:white;
+		.f1{
+			
+			float:left;
+			text-align: center; 
+			width:33.3%;
+			height:500px; 
+			border-right:1px solid #e3e3e3;
+			border-bottom:1px solid #e3e3e3;
+			// padding:20px 0;
+			box-sizing:border-box;
+			&:hover .zzc{
+				display: block;
+			}
+			img{
+				width:300px;
+				height:300px;
+				margin-bottom:16px;
+			}
+			a{
+				color:#7e7e7e;
+				display: block;
+				line-height: 30px;
+				margin-bottom:10px;
+			}
+			p{
+				color:#7e7e7e;
+				font-size:12px;
+				margin-bottom:30px;
+			}
+			span{
+				color:#eb6118;
+				display: block;
+				font-size:20px;
+			}
+			.zzc{
+				width:400px;
+				height:320px;
+				opacity:.4;
+				background:white;
+				display: none;
+				position:relative;
+				top:-440px;
+				left:0;
+			}
+		}
+	}
+}
+#refund{
+	height:180px;
+	background:#f4f5f9;
+	padding:40px 0 0 40px;
+
+	#content{
+		border-radius:8px;
+		width:1200px;
+		height:135px;
+		background:white;
+		img{
+			margin:20px 60px;
+			width:110px;
+			height:100px;
+		}
+	}
+}

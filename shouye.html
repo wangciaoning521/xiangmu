@@ -4,9 +4,10 @@
 	<meta charset="UTF-8">
 	<title>青橙，青橙手机</title>
 	<link rel="stylesheet" href="css/shouye.css">
+	<link rel="shortcut icon" href="1.jpg" />
 </head>
 <body>
-	<div id="up" onclick="goTop()">
+	<div id="up">
 		<div id="d1"></div>
 		<div id="d2"></div>
 		<div id="d3"></div>
@@ -14,7 +15,20 @@
 		<div id="d5"></div>
 	</div>
 	<div id="box">
-		
+		<img id="imgId1" src="img/shouye/10.png" />
+	    <img id="imgId2" src="img/shouye/11.png" />
+	    <img id="imgId3" src="img/shouye/12.png" />
+	    <img id="imgId4" src="img/shouye/13.png" />
+	    <img id="imgId5" src="img/shouye/14.png" />
+    <ul id="btns">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <div id="leftArrow" style="font-size: 50px">＜</div>
+    <div id="rightArrow" style="font-size: 50px">＞</div>
 	</div>
 	<div id="top">
 		<a href=""><img src="img/a.png" alt=""></a>
@@ -24,13 +38,13 @@
 				<li id="a"><a href="">青橙三好手机</a><span class="p1"></span></li>
 				<li id="a"><a href="">VOGA系列</a><span class="p1"></span></li>
 				<li id="a"><a href="">智能 · 配件</a><span class="p1"></span></li>
-				<li id="c"><a href="">商城</a></li>
+				<li id="c"><a href="http://localhost/xiangmu/index.html">商城</a></li>
 				<li id="c"><a href="">社区</a></li>
 				<li id="c"><a href="">服务</a></li>
 			</ul>
-			<a href="img/shouye/2.png" class="a"></a>
-			<a href="img/shouye/3.png" class="b"></a>
-			<a href="img/shouye/4.png" class="c"></a>
+			<a href="" class="a"></a>
+			<a href="http://localhost/xiangmu/index.html" class="b"></a>
+			<a href="" class="c"></a>
 		</div>
 	</div>
 	<section>
@@ -133,61 +147,137 @@
 </body>
 </html>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="js/sliderShow1.js"></script>
 <script type="text/javascript">
-$(function(){
-$("#WeChat").mouseenter(function(){
-	$("#none").css({"display":"block"});
-});
-$("#WeChat").mouseleave(function(){
-	$("#none").css({"display":"none"});
-});
-});
-// $(function(){
-// 		$("#b").mouseover(function(){
-// 			$("b").css({""});
-// 		});
-// });
-// window.onscroll=function(){
-// 	var up=document.getElementById("up");
-// 	var _top=document.body.scrollTop||document.documentElement.scrollTop;
-// 	if(_top>=800){
-// 		up.style.display="block";
-// 	}else{
-// 		up.style.display="none";
-// 	}
-// }
-// document.getElementById("d1").onclick=function(){
-// 	// let body=$("body");
-// 	// body.animate({scrollTop:"0"},2000);
-// 	document.body.scrollTop=document.documentElement.scrollTop=0;
-
-// }
-
-window.onload = function(){
-
-
-	
-	let s = new SlideShow(document.getElementById("box"),1200,780,["img/shouye/10.png","img/shouye/11.png","img/shouye/12.png","img/shouye/13.png","img/shouye/14.png"],3000,20,20,"green","blue");
-	s.initUI();
-	s.initEvent();
-	s.autoChange();
-
-}
+//回到顶部
 window.onscroll=function(){
-		var up=document.getElementById("up");
-		var _top=document.body.scrollTop||document.documentElement.scrollTop;
-		if(_top>=600){
-			up.style.display="block";
-			up.style.zIndex="99";
-		}else{
-			up.style.display="none";
-		}
+	var up=document.getElementById("up");
+	var _top=document.body.scrollTop||document.documentElement.scrollTop;
+	if(_top>=500){
+		up.style.display="block";
+		up.style.zIndex="99";
+	}else{
+		up.style.display="none";
 	}
-	document.getElementById("d1").onclick=function(){
-		// let body=$("body");
-		// body.animate({scrollTop:"0"},2000);
-		document.body.scrollTop=document.documentElement.scrollTop=0;
+}
+$(function(){
+	//回到顶部
+	$("#d1").click(function(){
+		$("body,html").animate({scrollTop:0},300);
+	})
+	$("#WeChat").mouseenter(function(){
+		$("#none").css({"display":"block"});
+	});
+	$("#WeChat").mouseleave(function(){
+		$("#none").css({"display":"none"});
+	});
+});
 
-	}
+
+//轮播图
+var arr=["img/shouye/10.png","img/shouye/11.png","img/shouye/12.png","img/shouye/13.png","img/shouye/14.png"];
+var ord = 0;//代表当前图片的序号，从0开始。
+var myTimer = null;
+
+function  initUI() {
+    $("#box li:first").css({"backgroundColor":"red"});
+}
+
+function  initEvent() {
+    $("#box").mouseenter(function () {
+        stopPlay();
+    });
+
+    $("#box").mouseleave(function () {
+        autoPlay();
+    });
+
+    $("#box li").click(function () {
+        goImg($("#box li").index(this));
+    });
+
+    $("#leftArrow").click(function () {
+        let transord =ord-1;
+        transord = transord<0?arr.length-1:transord;
+        goImg(transord);
+    });
+
+    $("#rightArrow").click(function () {
+        let transord =ord+1;
+        transord = transord>arr.length-1?0:transord;
+        goImg(transord);
+    });
+}
+
+//1、自动播放
+function autoPlay() {
+    myTimer = setInterval(function () {
+        //一、改变数据
+        // 1、记录当前序号（淡出的图片序号）
+        let outOrd = ord;
+        //2、改变要显示的图片的序号（淡出图片序号加一）
+        ord++;
+        if(ord>arr.length-1){
+            ord=0;
+        }
+        //二、改变外观
+        let $img = $("#box img");
+        //1、淡入淡出效果
+        //让一张(outOrd)淡出 当前消失
+        $img.eq(outOrd).animate({"opacity":0},2000);
+        //让一张(ord)淡入下一张图片显示
+        $img.eq(ord).animate({"opacity":1},2000);
+        //2、改变豆豆的颜色；
+        $("#box li").eq(ord).css({"backgroundColor":"red"}).siblings().css({"backgroundColor":"orange"});
+    },3000);
+}
+
+//2、停止播放
+function stopPlay() {
+    window.clearInterval(myTimer);
+}
+
+//3、跳转到指定的图片
+function  goImg(transOrd) {
+    //一、改变数据
+    // 1、记录当前序号（淡出的图片序号）
+    let outOrd = ord;
+    //2、改变要显示的图片的序号（传入的图片序号）
+    ord=transOrd;
+    if(ord>arr.length-1){
+        ord=0;
+    }
+    //二、改变外观
+    let $img = $("#box img");
+    //1、淡入淡出效果
+    //让一张(outOrd)淡出 当前消失
+    $img.eq(outOrd).animate({"opacity":0},2000);
+    //让一张(ord)淡入下一张图片显示
+    $img.eq(ord).animate({"opacity":1},2000);
+    //2、改变豆豆的颜色；
+    $("#box li").eq(ord).css({"backgroundColor":"red"}).siblings().css({"backgroundColor":"orange"});
+}
+
+
+$(function () {
+    //1、初始化界面
+    initUI();
+    //2、绑定事件
+    initEvent();
+    //3、自动播放
+    autoPlay();
+
+
+    $("#d5").click(function(){
+    	$("#d4").css({"display":"none"});
+    	$("#d3").css({"display":"none"});
+    	$("#d2").css({"display":"none"}); 
+    	$("#up").css({"height":"100px"});
+    })
+     $("#d5").dblclick(function(){
+    	$("#d4").css({"display":"block"});
+    	$("#d3").css({"display":"block"});
+    	$("#d2").css({"display":"block"}); 
+    	$("#up").css({"height":"250px"});
+    })
+});
 </script>

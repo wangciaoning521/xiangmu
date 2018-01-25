@@ -3,6 +3,54 @@ body, div, p, ul, li, img, h3, h4 {
   padding: 0;
   list-style: none; }
 
+.all {
+  width: 100%;
+  height: 100%;
+  background: white;
+  padding: 20px;
+  box-sizing: border-box; }
+  .all .first {
+    width: 1240px;
+    height: 640px;
+    background: url(../img/register/2.jpg) no-repeat;
+    background-size: 1240px 640px;
+    padding: 140px 0 0 200px;
+    box-sizing: border-box; }
+    .all .first .second {
+      border-radius: 4px;
+      width: 400px;
+      height: 400px;
+      float: left;
+      background: #54cfae;
+      padding: 40px;
+      box-sizing: border-box;
+      z-index: 99; }
+      .all .first .second p {
+        font-size: 16px;
+        text-indent: 20px;
+        color: #fbfbfb;
+        margin-bottom: 20px; }
+      .all .first .second span {
+        color: #fbfbfb; }
+    .all .first .third {
+      margin-top: 30px;
+      border-radius: 14px;
+      padding: 80px 70px 0;
+      box-sizing: border-box;
+      float: left;
+      width: 400px;
+      height: 340px;
+      background: #fbfbfb; }
+      .all .first .third input {
+        height: 30px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        border: none;
+        border-bottom: 1px solid #abe8cf; }
+      .all .first .third .btn {
+        width: 180px;
+        margin: 20px 0 0 30px; }
+
 #top {
   display: flex;
   align-items: center;

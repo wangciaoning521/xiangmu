@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>账号登录-青橙手机</title>
 	<link rel="stylesheet" href="css/login.css"/>
+	<link rel="shortcut icon" href="1.jpg" />
 </head>
 <body>
 	<div id="top">
@@ -14,9 +15,11 @@
 		<img src="img/login/3.jpg" alt="">
 		<div id="div1">
 			<h4>欢迎登录青橙账户</h4>
-			<input type="text" id="txt" placeholder="用户名或手机号" />
-			<input type="password" id="txt" placeholder="登录密码" />
-			<input type="button" id="btn" value="立即登录">
+			<form method="post" action="logincheck.php">
+		        用户名：<input name="username" type="text" id="txt" placeholder="用户名或手机号"  ><br/>
+		        密&nbsp;&nbsp;&nbsp;码：<input name="userpass" type="password" id="txt" placeholder="登录密码"  ><br/>
+		        <input type="submit" id="btn" value="立即登录" />
+		    </form>
 			<p>找回密码</p>
 			<div id="lo">
 				<span>用其他帐户登录 : </span>

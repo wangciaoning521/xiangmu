@@ -4,34 +4,69 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="css/shopp.css"/>
+	<link rel="stylesheet" href="css/common.css"/>
+	<link rel="shortcut icon" href="1.jpg" />
 </head>
 <body>
 	<div id="top">
 		<ul id="left">
-			<li><a href="#">青橙官网</a></li>
+			<li><a href="http://localhost/xiangmu/shouye.html">青橙官网</a></li>
 			<li><a href="#">品牌</a></li>
-			<li><a href="#">产品</a></li>
+			<li><a href="http://localhost/xiangmu/product.html">产品</a></li>
 			<li><a href="#">活动</a></li>
 			<li><a href="#">社区</a></li>
 			<li><a href="#">服务</a></li>
 		</ul>
 		<ul id="right">
-			<li><a href="#" id="logn">登录</a></li>
-			<li><a href="#" id="logn">注册</a></li>
+			<li><a href="login.html" id="logn">登录</a></li>
+			<li><a href="register.html" id="logn">注册</a></li>
 			<li><a href="#" id="shopp">购物车</a></li>
 			<img src="img/icon_cart.png" alt="">
 			<span>0</span>
 		</ul>
 	</div>
 	<header>
-		<img src="img/b1.png" alt="">
-		<div>
-			<a href="#">青橙VOGA系列<img src="img/b2.png" alt=""></a>
-			<a href="">青橙三好系列<img src="img/b2.png" alt=""></a>
-			<a href="">智能硬件<img src="img/b2.png" alt=""></a>
-			<a href="">配件<img src="img/b2.png" alt=""></a>
+		<a href=""><img src="img/index/icon.png" alt=""></a>
+		<div class="d1">
+			<ul>
+				<li id="a" class="q1"><a href="">青橙VOGA系列</a><span class="p1"></span></li>
+				<li id="a" class="q2"><a href="">青橙三好系列</a><span class="p1"></span></li>
+				<li id="a"><a href="">智能硬件</a><span class="p1"></span></li>
+				<li id="a"><a href="">配件</a><span class="p1"></span></li>
+			</ul>
 		</div>
-		
+		<div class="none">
+			<div id="first">
+				<div class="n1">
+					<img src="img/16.png" alt="">
+					<p class="n2">VOGA V</p>
+					<p class="n3">￥3999</p>
+				</div>
+			</div>
+			<div id="second">
+				<div class="n1">
+					<img src="img/16.png" alt="">
+					<p class="n2">VOGA V</p>
+					<p class="n3">￥3999</p>
+				</div>
+			</div>
+			<div id="third">
+				<div class="n1">
+					<img src="img/16.png" alt="">
+					<p class="n2">VOGA V</p>
+					<p class="n3">￥3999</p>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="none1">
+			<div id="second">
+				<div class="n4">
+					<img src="img/16.png" alt="">
+					<p class="n5">VOGA V</p>
+					<p class="n6">￥3999</p>
+				</div>
+			</div>
+		</div> -->
 	</header>
 	<section>
 		<div id="left">
@@ -63,9 +98,9 @@
 		</div>
 		
 		
-		<!-- <div id="se2">
-			<span id="s1">VOGA V激光投影手机</span>
-			<span id="s2">无需对焦 高清投影</span>
+		<div id="se2">
+			<p id="s1">VOGA V激光投影手机</p>
+			<p id="s2">无需对焦 高清投影</p>
 			<div id="s3">
 				<span>全网通</span>
 				<span>双卡双待</span>
@@ -74,7 +109,7 @@
 				<span>全金属后盖</span>
 			</div>
 			
-			<span id="s4">￥3999</span>
+			<p id="s4">￥3999</p>
 			<div id="sd1">
 				<span id="s5">总销售</span>
 				<span id="s6">118</span>
@@ -82,70 +117,141 @@
 				<span id="s8">0</span>
 			</div>
 			
-			<span id="s9">选择颜色</span>
+			<p id="s9">选择颜色</p>
 			<div id="sd3">
-				<div id="sd2">
-				<img src="img/shopp/月光蓝.gif" alt="">
-				<span>月光蓝</span>
+				<div class="sd2 sd0">
+					<img src="img/shopp/月光蓝.gif" alt="">
+					<span>月光蓝</span>
+				</div>
+				<div class="sd2 sd1">
+					<img src="img/shopp/曜石黑.gif" alt="">
+					<span>曜石黑</span>
+				</div>
+				<div id="sd4" class="sd2">
+					<span>曜黑金</span>
+					<span>曜黑金</span>
+				</div>
 			</div>
-			<div id="sd2">
-				<img src="img/shopp/曜石黑.gif" alt="">
-				<span>曜石黑</span>
-			</div>
-			</div>
-			<div id="sd4">
-				<span>曜黑金</span>
-				<span>曜黑金</span>
-			</div>
-			<span id="s10">选择内存</span>
+			
+			<p class="s10">选择内存</p>
 			<div id="sd6">
-				<div id="sd7">
+				<div class="sd7 w0">
 					<span>64GB</span>
 				</div>
-				<div id="sd7">
+				<div class="sd7 w1"> 
 					<span>128GB</span>
 				</div>
 			</div>
-			<span id="s10">选择系统</span>
-			<div id="sd12">
+			<p class="s10">选择系统</p>
+			<div class="sd12">
 				<span>MyUI</span>
 			</div>
-			<span id="s10">选择套餐</span>
-			<div id="sd12">
+			<p class="s10">选择套餐</p>
+			<div class="sd12">
 				<span>标配</span>
 			</div>
 			<div id="bCount">
 				<p>购买数量 :</p>
-				<input type="botton" id="btn" value="+" />
+				<span id="btn">-</span>
 				<input type="text" id="txt" value="1">
-				<input type="botton" id="btn" value="-" />
+				<span id="add">+</span>
 			</div>
 			<p id="hint">温馨提示<span> : 此款机型不参加以旧换新活动</span></p>
 			<div id="buy">
-				<input type="submit" value="立即购买">
+				<a href="scart.html" id="cart">立即购买</a>
 				<span>（运费：包邮）</span>
 			</div>
-		</div> -->
+		</div>
 	</section>
 
-	<!-- <div id="sec">
+	<div id="sec">
 		<div id="list">
-			<a href="#">产品详情</a>
-			<a href="">规格参数</a>
-			<a href="">用户评论</a>
-			<a href="">售后服务</a>
+			<span class="a1">产品详情</span>
+			<span>规格参数</span>
+			<span>用户评论</span>
+			<span>售后服务</span>
 		</div>
-		<img src="img/shopp/6.jpg" alt="">
-		<img src="img/shopp/7.jpg" alt="">
-		<img src="img/shopp/8.jpg" alt="">
-		<img src="img/shopp/9.jpg" alt="">
-		<img src="img/shopp/10.jpg" alt="">
-		<img src="img/shopp/11.jpg" alt="">
-		<img src="img/shopp/12.jpg" alt="">
-		<img src="img/shopp/13.jpg" alt="">
-		<img src="img/shopp/14.jpg" alt="">
+		<div class="all">
+			<div class="l0">
+				<img src="img/shopp/6.jpg" alt="">
+				<img src="img/shopp/7.jpg" alt="">
+				<img src="img/shopp/8.jpg" alt="">
+				<img src="img/shopp/9.jpg" alt="">
+				<img src="img/shopp/10.jpg" alt="">
+				<img src="img/shopp/11.jpg" alt="">
+				<img src="img/shopp/12.jpg" alt="">
+				<img src="img/shopp/13.jpg" alt="">
+				<img src="img/shopp/14.jpg" alt="">
+			</div>
+			<div class="l1">
+				<div class="All">
+					<div class="left">
+					主体
+					</div>
+					<div class="right">
+						<ul>
+							<li>品牌：青橙 (qingcheng)</li>
+							<li>型号：青橙T5</li>
+							<li>外观设计：直板</li>
+							<li>配色：时光金</li>
+							<li>三防等级：无</li>
+							<li>操作系统：MyUI 5.0(基于Android M）</li>
+							<li>CPU：MT6737M，4核 64位 1.1GHz</li>
+							<li>GPU：ARM Mali-T860 MP2 350MHz</li>
+							<li>ROM：8GB</li>
+							<li>RAM：1GB</li>
+							<li>用户可用空间：约5GB</li>
+							<li>储存卡类型：MicroSD (TF)</li>
+							<li>最大储存扩展：128GB</li>
+						</ul>
+					</div>
+				</div>
+				<div class="All">
+					<div class="left">
+					主体
+					</div>
+					<div class="right">
+						<ul>
+							<li>品牌：青橙 (qingcheng)</li>
+							<li>型号：青橙T5</li>
+							<li>外观设计：直板</li>
+							<li>配色：时光金</li>
+							<li>三防等级：无</li>
+							<li>操作系统：MyUI 5.0(基于Android M）</li>
+							<li>CPU：MT6737M，4核 64位 1.1GHz</li>
+							<li>GPU：ARM Mali-T860 MP2 350MHz</li>
+							<li>ROM：8GB</li>
+							<li>RAM：1GB</li>
+							<li>用户可用空间：约5GB</li>
+							<li>储存卡类型：MicroSD (TF)</li>
+							<li>最大储存扩展：128GB</li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+			<div class="l2">
+				<div class="All">
+					<div class="left">
+						<img src="img/shopp/c.png" alt="">
+						<p>%u4E9*****</p>
+					</div>
+					<div class="right">
+						<span></span>
+						<div class="small">
+							<p class="s1">手机挺好的不错，买给老妈用的</p>
+							<p class="s2">2017/7/5 14:36:08</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="l3">
+			</div>
+		</div>
 		
-	</div> -->
+		
+		
+	</div>
 	<div id="refund">
 		<div id="content">
 			<img src="img/shopp/s1.jpg" alt="">
@@ -156,7 +262,7 @@
 		</div>
 	</div>
 
-	<div id="section2">
+<div id="section2">
 		<div id="s1">
 			<span>购买指南</span>
 			<ul>
@@ -185,13 +291,23 @@
 			<span>关注青橙</span>
 			<ul>
 				<li><a href="#">官方新浪微博</a></li>
-				<li><a href="#">官方微信</a></li>
+				<li><a href="#" id="WeChat">官方微信</a></li>
 				<li><a href="#">官方论坛</a></li>
 			</ul>
 		</div>
-		<img src="img/s1.jpg" alt="">
-		<img src="img/s2.jpg" alt="">
-		<div id="s2">
+		<div id="none">
+			<div id="D1">
+				<span id="nP1">青橙官方微信二维码</span><span id="nP2">x</span>
+			</div>
+			<div id="D2">
+				<p id="C1">打开微信，选择"扫一扫"功能，</p>
+				<p id="C2">对准下方二维码即可。</p>
+				<img src="img/index/weixin.png" id="weixin" alt="">
+			</div>
+		</div>
+		<img src="img/s1.jpg" id="s11" alt="">
+		<img src="img/s2.jpg" id="s22" alt="">
+		<div id="s2"> 
 			<img src="img/s3.jpg" id="img1" alt="">
 			<img src="img/s4.png" id="img2" alt="">
 		</div>
@@ -223,30 +339,126 @@
 	</div>
 </body>
 </html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/shopping.js"></script>
 <script type="text/javascript">
-function $(id){
+// var num=0;
+// function hoverTrademarkList(){
+// 	$(".trademarkList ul li").each(function(i){
+// 		$(this).click(function(){
+// 			//将对应的内容显示
+// 			$(".trademarkList_"+i).css({display:"block"});
+// 			$(this).css({background:"#da3700",color:"white"});
+// 			//将之前的显示的内容隐藏
+// 			if(num!=i){
+// 				$(".trademarkList_"+num).css({display:"none"});
+// 				$(".trademarkList ul li").eq(num).css({background:"#fafafa",color:"#2d3834"});
+// 				num=i;
+// 			}
+// 		})
+// 	})
+// }
+
+$(function(){
+
+	//加入购物车
+	$("#cart").click(function(){
+		$.ajax({
+			type:"get",
+			url:"addShoppingCart.php",
+			data:{
+				vipName:2,
+				goodsId:01,
+				goodsCount:$("#txt").val()
+			},
+			success:function(data){
+				if(data=="1"){
+					alert("添加成功！");
+				}else{
+					alert("添加失败！");
+				}
+			},
+			dataType:"json"
+		});
+	});
+	var num=0;
+	$("#list span").each(function(i){
+		$(this).click(function(){
+			$("#list span").css({"border":"none"});
+			$(".all").children().css({display:"none"});
+			// $("#list span").eq(i).animate(function(){
+			// 	$("#list span").eq(i).css({"border-bottom":"2px solid #ed6c00"});
+			// },200);
+			$("#list span").eq(i).css({"border-bottom":"2px solid #ed6c00"});
+			$(".l"+i).css({"display":"block"});
+		})
+	})
+$("#sd6 div").click(function(){
+	$(this).addClass("on").siblings().removeClass("on");
+});
+
+// $("#sd6 div").click(function(){
+// 	$("#sd6 div").css({"border":"1px solid red"});
+// 	$("#sd6 div").css({"border":"1px solid red"});
+// });
+	//滑过关于微信的效果
+	$("#WeChat").mouseenter(function(){
+		$("#none").css({"display":"block"});
+	});
+	$("#WeChat").mouseleave(function(){
+		$("#none").css({"display":"none"});
+	});
+	$
+	$(".q1").mouseenter(function(){
+		$(".none div").animate({"left":"0px"},800);
+		$(".none").css({"display":"block","z-index":"99"});
+	})
+	$(".q1").mouseleave(function(){
+		//$(".none div").animate({"left":"200px"},800);
+		$(".none div").css({"left":"200px"});
+		$(".none").css({"display":"none"});
+	})
+	// $(".q2").mouseenter(function(){
+	// 	$(".n1").animate({"left":"0px"},800);
+	// 	$(".none").css({"display":"block"});
+	// })
+	// $(".q1").mouseleave(function(){
+	// 	$(".n1").css({"left":"100px"});
+	// 	$(".none").css({"display":"none"});
+	// })
+});
+
+$(function(){
+	$("#WeChat").mouseenter(function(){
+		$("#none").css({"display":"block"});
+	});
+	$("#WeChat").mouseleave(function(){
+		$("#none").css({"display":"none"});
+	});
+});
+function $1(id){
 	return document.getElementById(id);
 }
 	arr=["box1","box2","box3","box4","box5"];
 	for(let i=0;i<arr.length;i++){
-		$(arr[i]).onclick=function(){
-			$("imgss").src="img/shopp/"+(i+1)+".jpg";
-			$("imges").src="img/shopp/"+(i+1)+".jpg";
+		$1(arr[i]).onclick=function(){
+			$1("imgss").src="img/shopp/"+(i+1)+".jpg";
+			$1("imges").src="img/shopp/"+(i+1)+".jpg";
 
-		$("rightBox").style.display="none";
-		$("smallBox").style.display="none";
+		$1("rightBox").style.display="none";
+		$1("smallBox").style.display="none";
 		}
 	}
-	$("bigBox").onmouseout=function(){
-		$("rightBox").style.display="none";
-		$("smallBox").style.display="none";
+	$1("bigBox").onmouseout=function(){
+		$1("rightBox").style.display="none";
+		$1("smallBox").style.display="none";
 	}
-	$("bigBox").onmousemove=function(event){
+	$1("bigBox").onmousemove=function(event){
 
 		let evt=event||window.event;
 
-		$("rightBox").style.display="block";
-		$("smallBox").style.display="block";
+		$1("rightBox").style.display="block";
+		$1("smallBox").style.display="block";
 		let smallBoxWidth=80;//放大镜
 		let smallBoxHeight=80;
 
@@ -256,22 +468,22 @@ function $(id){
 		let smallBoxLeft = left-smallBoxWidth/2;//放大镜内鼠标的位置
 		let smallBoxTop = top-smallBoxHeight/2;
 		
-		if(smallBoxLeft>=$("bigBox").offsetWidth-$("smallBox").offsetWidth){
-			smallBoxLeft=$("bigBox").offsetWidth-$("smallBox").offsetWidth;//如果超过边界，就让他等于边界
+		if(smallBoxLeft>=$1("bigBox").offsetWidth-$1("smallBox").offsetWidth){
+			smallBoxLeft=$1("bigBox").offsetWidth-$1("smallBox").offsetWidth;//如果超过边界，就让他等于边界
 		}else if(smallBoxLeft<=0){
 			smallBoxLeft=0;
 		}
-		if(smallBoxTop>=$("bigBox").offsetHeight-$("smallBox").offsetHeight){
-			smallBoxTop=$("bigBox").offsetHeight-$("smallBox").offsetHeight;//如果超过边界，就让他等于边界
+		if(smallBoxTop>=$1("bigBox").offsetHeight-$1("smallBox").offsetHeight){
+			smallBoxTop=$1("bigBox").offsetHeight-$1("smallBox").offsetHeight;//如果超过边界，就让他等于边界
 		}else if(smallBoxTop<=0){
 			smallBoxTop=0;
 		}
 		//放大镜的position
-		$("smallBox").style.left=smallBoxLeft+"px";
-		$("smallBox").style.top=smallBoxTop+"px";
+		$1("smallBox").style.left=smallBoxLeft+"px";
+		$1("smallBox").style.top=smallBoxTop+"px";
 
 		//改变右边大图的position属性
-		$("imges").style.left = -2*smallBoxLeft+"px";
-		$("imges").style.top = -2*smallBoxTop+"px";
+		$1("imges").style.left = -2*smallBoxLeft+"px";
+		$1("imges").style.top = -2*smallBoxTop+"px";
 	}
 </script>

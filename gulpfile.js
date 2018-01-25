@@ -8,6 +8,11 @@ gulp.task("copy-index",function(){
 		.pipe(gulp.dest("D:\\phpStudy\\WWW\\xiangmu"));
 });
 
+gulp.task("copy-php",function(){
+	gulp.src("*.php")
+		.pipe(gulp.dest("D:\\phpStudy\\WWW\\xiangmu"));
+});
+
 gulp.task("copy-js",function(){
 	gulp.src("js/*.js")
 		.pipe(gulp.dest("D:\\phpStudy\\WWW\\xiangmu\\js"));
@@ -36,7 +41,7 @@ gulp.task("sassfile",function(){
 gulp.task("sassfiles",function(){
 	gulp.src("sass/*.scss")
 		.pipe(sass())
-		.pipe(gulp.dest("css"));
+		.pipe(gulp.dest("css")); 
 });
 
 gulp.task("copy-img",function(){
@@ -54,6 +59,7 @@ gulp.task("watchall",function(){
 	gulp.watch("img/**/*",["copy-img"]);
 	gulp.watch("sass/*.scss",["sassfile"]);
 	gulp.watch("sass/*.scss",["sassfiles"]);
+	gulp.watch("*.php",["copy-php"]);
 	// gulp.watch(["js/index.js","js/goods.js"],["concatjs"]);
 	// gulp.watch(["js/index.js","js/goods.js"],["concatanguglifyjs"]);
 });

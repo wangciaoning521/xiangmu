@@ -1,0 +1,110 @@
+body, div, p, ul, li, img, h3, h4 {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+#up {
+  position: fixed;
+  right: 5px;
+  bottom: 56px;
+  display: none;
+  width: 40px;
+  height: 160px;
+  border: 1px solid #dddddd; }
+  #up #d1, #up #d2, #up #d3, #up #d4, #up #d5 {
+    width: 40px;
+    height: 40px; }
+  #up #d1 {
+    background: white url(../img/xbt.png);
+    background-position: 121px -3px; }
+  #up #d1:hover {
+    background-position: 120px 42px; }
+  #up #d2 {
+    background: white url(../img/2.png); }
+  #up #d2:hover {
+    background: white url(../img/xbt.png);
+    background-position: 41px 42px; }
+  #up #d3 {
+    background: white url(../img/6.png);
+    background-position: 121px -3px; }
+  #up #d4 {
+    background: white url(../img/xbt.png);
+    background-position: 82px -3px;
+    border-bottom: 1px solid #dddddd; }
+  #up #d4:hover {
+    background-position: 81px 42px; }
+  #up #d5 {
+    background: white url(../img/xbt.png);
+    background-position: 160px 31px; }
+
+section {
+  width: 100%;
+  background: #f4f5f9;
+  padding: 20px 45px 0;
+  box-sizing: border-box; }
+  section .first {
+    height: 90px;
+    background: pink;
+    margin-bottom: 20px; }
+  section .second {
+    border: 1px solid #e3e3e3;
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: white; }
+    section .second .f1 {
+      float: left;
+      text-align: center;
+      width: 33.3%;
+      height: 500px;
+      border-right: 1px solid #e3e3e3;
+      border-bottom: 1px solid #e3e3e3;
+      box-sizing: border-box; }
+      section .second .f1:hover .zzc {
+        display: block; }
+      section .second .f1 img {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 16px; }
+      section .second .f1 a {
+        color: #7e7e7e;
+        display: block;
+        line-height: 30px;
+        margin-bottom: 10px; }
+      section .second .f1 p {
+        color: #7e7e7e;
+        font-size: 12px;
+        margin-bottom: 30px; }
+      section .second .f1 span {
+        color: #eb6118;
+        display: block;
+        font-size: 20px; }
+      section .second .f1 .zzc {
+        width: 400px;
+        height: 320px;
+        opacity: .4;
+        background: white;
+        display: none;
+        position: relative;
+        top: -440px;
+        left: 0; }
+
+#refund {
+  height: 180px;
+  background: #f4f5f9;
+  padding: 40px 0 0 40px; }
+  #refund #content {
+    border-radius: 8px;
+    width: 1200px;
+    height: 135px;
+    background: white; }
+    #refund #content img {
+      margin: 20px 60px;
+      width: 110px;
+      height: 100px; }

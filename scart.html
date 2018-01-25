@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/scart.css"/>
+	<link rel="stylesheet" href="css/common.css"/>
+	<link rel="shortcut icon" href="1.jpg" />
+</head>
+<body>
+	<div id="top">
+		<ul id="left">
+			<li><a href="#">青橙官网</a></li>
+			<li><a href="#">品牌</a></li>
+			<li><a href="product.html">产品</a></li>
+			<li><a href="#">活动</a></li>
+			<li><a href="#">社区</a></li>
+			<li><a href="#">服务</a></li>
+		</ul>
+		<ul id="right">
+			<li><a href="login.html" id="logn">登录</a></li>
+			<li><a href="register.html" id="logn">注册</a></li>
+			<li><a href="#" id="shopp">购物车</a></li>
+			<img src="img/icon_cart.png" alt="">
+			<span>0</span>
+		</ul>
+	</div>
+	<header>
+		<a href=""><img src="img/index/icon.png" alt=""></a>
+		<div class="d1">
+			<ul>
+				<li id="a" class="q1"><a href="">青橙VOGA系列</a><span class="p1"></span></li>
+				<li id="a" class="q2"><a href="">青橙三好系列</a><span class="p1"></span></li>
+				<li id="a"><a href="">智能硬件</a><span class="p1"></span></li>
+				<li id="a"><a href="">配件</a><span class="p1"></span></li>
+			</ul>
+		</div>
+		<div class="none">
+			<div id="first">
+				<div class="n1">
+					<img src="img/16.png" alt="">
+					<p class="n2">VOGA V</p>
+					<p class="n3">￥3999</p>
+				</div>
+			</div>
+			<div id="second">
+				<div class="n1">
+					<img src="img/16.png" alt="">
+					<p class="n2">VOGA V</p>
+					<p class="n3">￥3999</p>
+				</div>
+			</div>
+			<div id="third">
+				<div class="n1">
+					<img src="img/16.png" alt="">
+					<p class="n2">VOGA V</p>
+					<p class="n3">￥3999</p>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="none1">
+			<div id="second">
+				<div class="n4">
+					<img src="img/16.png" alt="">
+					<p class="n5">VOGA V</p>
+					<p class="n6">￥3999</p>
+				</div>
+			</div>
+		</div> -->
+	</header>
+	<section>
+		<div class="s1">
+			<div class="mulu">
+				<div class="first">
+					<div class="f1">
+						
+					</div>
+					<span></span>
+				</div>
+				<div class="second">
+					<div class="f1">
+						
+					</div>
+					<span></span>
+				</div>
+				<div class="third">
+					<div class="f1">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="s2">
+			<div class="list1">
+				<span class="p1">
+					<input type="checkbox" id="all" class="c"/>全选
+				</span>
+				<span class="p2">商品名称</span>
+				<span class="p3">单品价格</span>
+				<span class="p3">购买数量</span>
+				<span class="p4">小计</span>
+				<span class="p4 p5">操作</span>
+			</div>
+			<div class="test">
+				<span class="p1">
+					<input type="checkbox" class="c1" />
+				</span>
+				<span class="p2">商品名称</span>
+				<span class="p3">单品价格</span>
+				<span class="p3">购买数量</span>
+				<span class="p4">小计</span>
+				<span class="p4 p5">操作</span>
+			</div>
+			<div class="test">
+				<span class="p1">
+					<input type="checkbox" class="c1"/>
+				</span>
+				<span class="p2">商品名称</span>
+				<span class="p3">单品价格</span>
+				<span class="p3">购买数量</span>
+				<span class="p4">小计</span>
+				<span class="p4 p5">操作</span>
+			</div>
+			<div class="test">
+				<span class="p1">
+					<input type="checkbox" class="c1"/>
+				</span>
+				<span class="p2">商品名称</span>
+				<span class="p3">单品价格</span>
+				<span class="p3">购买数量</span>
+				<span class="p4">小计</span>
+				<span class="p4 p5">操作</span>
+			</div>
+		</div>
+	</section>
+	<div class="to">
+		
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<!-- <script type="text/javascript" src="js/scart.js"></script>
+ --><script type="text/javascript">
+$(function(){
+	// $(".c3").mouseenter(function(){
+	// 	$(".c3 img").css({"transform":"rotate(1.2)"});
+	// })
+	//滑过关于微信的效果
+	$("#WeChat").mouseenter(function(){
+		$("#none").css({"display":"block"});
+	});
+	$("#WeChat").mouseleave(function(){
+		$("#none").css({"display":"none"});
+	});
+	$(".q1").mouseenter(function(){
+		$(".none div").animate({"left":"0px"},800);
+		$(".none").css({"display":"block","z-index":"99"});
+	})
+	$(".q1").mouseleave(function(){
+		//$(".none div").animate({"left":"200px"},800);
+		$(".none div").css({"left":"200px"});
+		$(".none").css({"display":"none"});
+	})
+	// $(".q2").mouseenter(function(){
+	// 	$(".n1").animate({"left":"0px"},800);
+	// 	$(".none").css({"display":"block"});
+	// })
+	// $(".q1").mouseleave(function(){
+	// 	$(".n1").css({"left":"100px"});
+	// 	$(".none").css({"display":"none"});
+	// })
+});
+window.onload=function(){
+	$.ajax({
+		type:"get",
+		url:"getShoppingCart.php",
+		data:{
+			vipName:2
+		},
+		success:function(data){
+			show(data);
+			alert(data);
+		}
+		dataType:"json"
+	});
+	function show(data){
+		let $box=$(".to");
+		for(let i=0;i<data.length;i++){
+			let str="<p>"+data[i].vipName+"</p><p>"+data[i].goodsId+"</p><p>"+data[i].goodsCount+"</p>";
+			$box.append(str);
+		}
+	}
+}
+</script>
