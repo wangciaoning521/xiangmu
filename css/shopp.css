@@ -15,9 +15,6 @@ section {
   box-sizing: border-box;
   padding-right: 45px;
   overflow: hidden; }
-  section .on {
-    box-sizing: border-box;
-    border: 1px solid #ed6c00; }
   section #left {
     float: left;
     width: 720px;
@@ -156,6 +153,7 @@ section {
     section #se2 #s9, section #se2 .s10 {
       line-height: 38px;
       height: 38px;
+      width: 100px;
       color: #7e7e7e;
       font-size: 12px; }
     section #se2 #buy a {
@@ -180,27 +178,16 @@ section {
     section #se2 #sd6 {
       width: 300px;
       height: 45px; }
-      section #se2 #sd6 .sd7 {
-        float: left;
-        width: 140px;
-        margin-right: 10px;
-        box-sizing: border-box;
-        height: 45px;
-        border: 1px solid #eeeeee;
-        line-height: 45px;
-        text-align: center; }
-        section #se2 #sd6 .sd7 span {
-          font-size: 14px;
-          margin-left: 20px; }
-    section #se2 #sd4 {
+    section #se2 .sd7 {
+      float: left;
       width: 140px;
-      overflow: hidden;
-      height: 45px;
+      margin-right: 10px;
       box-sizing: border-box;
+      height: 45px;
       border: 1px solid #eeeeee;
-      margin-top: 10px; }
-      section #se2 #sd4 span {
-        line-height: 45px;
+      line-height: 45px;
+      text-align: center; }
+      section #se2 .sd7 span {
         font-size: 14px;
         margin-left: 20px; }
     section #se2 #sd3 {
@@ -223,6 +210,9 @@ section {
         line-height: 45px;
         margin-left: 20px;
         font-size: 14px; }
+    section #se2 .n {
+      box-sizing: border-box;
+      border: 1px solid #ed6c00; }
 
 #sec {
   padding: 0 46px;

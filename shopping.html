@@ -360,7 +360,12 @@
 // }
 
 $(function(){
-
+	$("#sd3 div").click(function(){
+		$(this).addClass("n").siblings().removeClass("n");
+	});
+	$("#sd6 div").click(function(){
+		$(this).addClass("n").siblings().removeClass("n");
+	});
 	//加入购物车
 	$("#cart").click(function(){
 		$.ajax({

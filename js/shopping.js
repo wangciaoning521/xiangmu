@@ -22,19 +22,19 @@ $("#btn").click(function(){
 // $(".w2").click(function(){
 // 	$(this).css({"border":"1px solid #ed6c00"});
 // })
-for(let i=0;i<$("#sd6 div").length;i++){
+// for(let i=0;i<$("#sd6 div").length;i++){
 	
-		$(".w"+i).click(function(){
-			$("#sd6 div").css({"border":"1px solid #eeeeee"});
-			$(".w"+i).fadeIn(1200,function(){
-				$(this).css({"border":"1px solid #ed6c00"});
-			})
-	})
-}
+// 		$(".w"+i).click(function(){
+// 			$("#sd6 div").css({"border":"1px solid #eeeeee"});
+// 			$(".w"+i).fadeIn(1200,function(){
+// 				$(this).css({"border":"1px solid #ed6c00"});
+// 			})
+// 	})
+// }
 
-for(let i=0;i<$("#sd3 div").length;i++){
-	$(".sd"+i).click(function(){
-		$("#sd3 div").css({"border":"1px solid #eeeeee"});
-		$(this).css({"border":"1px solid #ed6c00"});
-	})
-}
+// for(let i=0;i<$("#sd3 div").length;i++){
+// 	$(".sd"+i).click(function(){
+// 		$("#sd3 div").css({"border":"1px solid #eeeeee"});
+// 		$(this).css({"border":"1px solid #ed6c00"});
+// 	})
+// }

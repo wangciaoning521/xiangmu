@@ -5,24 +5,23 @@
 	<title>注册账户-青橙手机</title>
 	<link rel="stylesheet" href="css/register.css"/>
 	<link rel="shortcut icon" href="1.jpg" />
+	<style type="text/css">
+		form{
+			width:300px;
+			height:300px;
+			margin:0 auto;
+
+		}
+		#usernameMsg{
+			margin-top:20px;
+		}
+		.btn{
+			margin:30px 90px;
+		}
+	</style>
 </head>
 <body>
-	<!-- <div class="all">
-		<div class="first">
-			<div class="second">
-				<span>轻松一下，留一个笑脸给自己;休闲一下，留一个空间给自己;宽容一下，留份简单给自己;放纵一下，留份快乐给自己。</span>
-			</div>
-			<div class="third">
-				<form method="post" action="regsave.php" id="f">
-			        用户名：<input id="txtusername" name="username" type="text"  ><span id="usernameMsg"></span><br/>
-			        密&nbsp;&nbsp;&nbsp;码：<input name="userpass" type="password" ><br/>
-			        <input class="btn"  type="submit" value="注册" />
-			    </form>
-			</div>
-		</div> -->
-
-
-		<div id="top">
+	<div id="top">
 		<img src="img/login/icon.png" alt="">
 	</div>
 	<div id="footer">
@@ -32,16 +31,11 @@
 				<span id="sp2">注册成功即送2000积分</span>
 			</div>
 			<p id="hint"></p>
-			<input type="text" id="txt1" class="txt"  placeholder="注册手机号">
-			<input type="password" id="txt2" class="txt" placeholder="登录密码(长度在8-15之间)">
-			<input type="password" id="txt3" class="txt" placeholder="确认密码">
-			<div id="dd2">
-				<input type="text" id="txt4" class="t1" placeholder="短信验证码">
-				<input type="button" id="btn" value="获取短信验证码" >
-			</div>
-			<input type="checkbox" id="ch1">
-			<span id="sa3">我已阅读并同意《青橙手机用户注册协议》</span>
-			<input type="button" id="txt5" value="立即注册">
+			<form method="post" action="regsave1.php" id="f">
+		        手机号：<input id="txt1" placeholder="注册手机号" name="userphone" type="text"><p id="usernameMsg"></p><br/><br/>
+		        密&nbsp;&nbsp;&nbsp;码：<input name="userpass" placeholder="登录密码(长度在8-15之间)" type="password" ><br/>
+		        <input class="btn"  type="submit" value="注册" />
+		    </form>
 		</div>
 
 		<div id="last">
@@ -51,35 +45,37 @@
 			<span>青橙公司版权所有-沪ICP备12006100号</span>
 		</div>
 	</div>
-	<!-- </div> -->
 	
 </body>
 </html>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-<!-- <script type="text/javascript" src="js/tools.js"></script> -->
 <script type="text/javascript">
 var usernameExists = true;
 $(function(){
-	$("#txtusername").blur(function(){
-		$.ajax({
-			url:"usercheck.php",
+	$("#txt1").blur(function(){
+		if($("#txt1").val()){
+			$.ajax({
+
+			url:"usercheck1.php",
 			method:"get",
-			data:{"username":$("#txtusername").val()},
+			data:{"userphone":$("#txt1").val()},
 			success:function(data){
 				if(data=="0"){
 					usernameExists = false;
-					$("usernameMsg").html("该用户名可用");
+					$("usernameMsg").html("该手机号可用");
 				}else{
 					usernameExists = true;
-					$("#usernameMsg").html("该用户名已存在");
+					$("#usernameMsg").html("该手机号已存在");555
 				}
 			}
 		});
+		}
+		
 	});
 
 	$("#f").submit(function(){
 		if(usernameExists){
-			alert("亲，用户名已经存在");
+			alert("亲，该手机号已经存在");
 			return false;
 		}
 	});

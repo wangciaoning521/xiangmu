@@ -105,31 +105,67 @@
 				<span class="p1">
 					<input type="checkbox" class="c1" />
 				</span>
-				<span class="p2">商品名称</span>
-				<span class="p3">单品价格</span>
-				<span class="p3">购买数量</span>
-				<span class="p4">小计</span>
-				<span class="p4 p5">操作</span>
+				<img src="img/scart/1.jpg" alt=""/>
+				<div class="d1">
+					<strong>VOGA V激光投影手机</strong>
+					<span class="p3">规格: 月光蓝,MyUI,标配</span>
+				</div>
+				
+				<span class="p4">￥</span>
+				<span class="price">6888</span>
+				<div class="count">
+					<a href="javascript:;" class="cut">-</a>
+					<input type="text" value="1" class="txt">
+					<a href="javascript:;" class="add">+</a>
+				</div>
+				<span class="p6">￥</span>
+				<input type="text" value="6888" class="p7">
+				<a href="javascript:;" class="a1">删除</a>
 			</div>
 			<div class="test">
 				<span class="p1">
-					<input type="checkbox" class="c1"/>
+					<input type="checkbox" class="c1" />
 				</span>
-				<span class="p2">商品名称</span>
-				<span class="p3">单品价格</span>
-				<span class="p3">购买数量</span>
-				<span class="p4">小计</span>
-				<span class="p4 p5">操作</span>
+				<img src="img/scart/2.jpg" alt=""/>
+				<div class="d1">
+					<strong>青橙N20</strong>
+					<span class="p3">规格: 猎户银,16GB,标配</span>
+				</div>
+				
+				<span class="p4">￥</span>
+				<span class="price">699</span>
+				<div class="count">
+					<a href="javascript:;" class="cut">-</a>
+					<input type="text" value="1" class="txt">
+					<a href="javascript:;" class="add">+</a>
+				</div>
+				<span class="p6">￥</span>
+				<input type="text" value="699" class="p7">
+				<a href="javascript:;" class="a1">删除</a>
 			</div>
 			<div class="test">
 				<span class="p1">
-					<input type="checkbox" class="c1"/>
+					<input type="checkbox" class="c1" />
 				</span>
-				<span class="p2">商品名称</span>
-				<span class="p3">单品价格</span>
-				<span class="p3">购买数量</span>
-				<span class="p4">小计</span>
-				<span class="p4 p5">操作</span>
+				<img src="img/scart/3.png" alt=""/>
+				<div class="d1">
+					<strong>青橙T5</strong>
+					<span class="p3">规格: 时光金,MyUI,标配</span>
+				</div>
+				
+				<span class="p4">￥</span>
+				<span class="price">599</span>
+				<div class="count">
+					<a href="javascript:;" class="cut">-</a>
+					<input type="text" value="1" class="txt">
+					<a href="javascript:;" class="add">+</a>
+				</div>
+				<span class="p6">￥</span>
+				<input type="text" value="599" class="p7">
+				<a href="javascript:;" class="a1">删除</a>
+			</div>
+			<div class="di">
+				<span>凡购买含手机的订单全部顺丰包邮</span>
 			</div>
 		</div>
 	</section>
@@ -139,8 +175,8 @@
 </body>
 </html>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-<!-- <script type="text/javascript" src="js/scart.js"></script>
- --><script type="text/javascript">
+<script type="text/javascript" src="js/scart.js"></script>
+<script type="text/javascript">
 $(function(){
 	// $(".c3").mouseenter(function(){
 	// 	$(".c3 img").css({"transform":"rotate(1.2)"});
@@ -170,25 +206,25 @@ $(function(){
 	// 	$(".none").css({"display":"none"});
 	// })
 });
-window.onload=function(){
-	$.ajax({
-		type:"get",
-		url:"getShoppingCart.php",
-		data:{
-			vipName:2
-		},
-		success:function(data){
-			show(data);
-			alert(data);
-		}
-		dataType:"json"
-	});
-	function show(data){
-		let $box=$(".to");
-		for(let i=0;i<data.length;i++){
-			let str="<p>"+data[i].vipName+"</p><p>"+data[i].goodsId+"</p><p>"+data[i].goodsCount+"</p>";
-			$box.append(str);
-		}
-	}
-}
+// window.onload=function(){
+// 	$.ajax({
+// 		type:"get",
+// 		url:"getShoppingCart.php",
+// 		data:{
+// 			vipName:2
+// 		},
+// 		success:function(data){
+// 			show(data);
+// 			alert(data);
+// 		}
+// 		dataType:"json"
+// 	});
+// 	function show(data){
+// 		let $box=$(".to");
+// 		for(let i=0;i<data.length;i++){
+// 			let str="<p>"+data[i].vipName+"</p><p>"+data[i].goodsId+"</p><p>"+data[i].goodsCount+"</p>";
+// 			$box.append(str);
+// 		}
+// 	}
+// }
 </script>

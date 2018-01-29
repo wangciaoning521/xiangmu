@@ -19,10 +19,7 @@ section{
 	box-sizing:border-box;
 	padding-right:45px;
 	overflow:hidden;
-	.on{
-		box-sizing:border-box; 
-		border:1px solid #ed6c00;
-	}
+	
 	#left{
 		float:left;
 		width:720px;
@@ -92,7 +89,7 @@ section{
 		padding-left:44px;
 		box-sizing:border-box; 
 		float:left;
-
+		
 		#s1{
 			font-size:24px;
 			font-weight:900;
@@ -117,7 +114,6 @@ section{
 		}
 		#s4{
 			height:60px;
-			// width:470px;
 			font-size:24px;
 			color:#eb6118;
 			font-weight:900;
@@ -187,7 +183,6 @@ section{
 			}
 		}
 		.sd12{
-			// float:left;
 			width:140px;
 			height:45px;
 			border:1px solid #ed6c00;
@@ -200,7 +195,7 @@ section{
 		#s9,.s10{
 			line-height: 38px;
 			height:38px;
-			// float:left;
+			width:100px;
 			color:#7e7e7e;
 			font-size:12px;
 		}
@@ -232,12 +227,10 @@ section{
 
 		#sd6{
 			width:300px;
-			// overflow:hidden;
 			height:45px;
-			// float:left;
-			// float:left;
-
-			.sd7{
+			
+		}
+		.sd7{
 				float:left;
 				width:140px;
 				margin-right:10px;
@@ -246,32 +239,15 @@ section{
 				border:1px solid #eeeeee;
 				line-height: 45px;
 				text-align: center;
-			span{
-				font-size:14px; 
-				margin-left:20px;
+				span{
+					font-size:14px; 
+					margin-left:20px;
+				}
 			}
-			}
-		}
-		#sd4{
-			// float:left;
-			// text-align: center;
-			width:140px;
-			overflow:hidden;
-			height:45px;
-			box-sizing:border-box;
-			border:1px solid #eeeeee;
-			margin-top:10px;
-			span{
-				line-height: 45px;
-				font-size:14px;
-				margin-left:20px;
-			}
-		}
+		
 		#sd3{
 			width:300px;
-			// overflow:hidden;
 			height:100px;
-			// float:left;
 		}
 		.sd2{
 			float:left;
@@ -292,6 +268,10 @@ section{
 				margin-left:20px;
 				font-size:14px;
 			}
+		}
+		.n{
+			box-sizing:border-box; 
+			border:1px solid #ed6c00;
 		}
 	}
 

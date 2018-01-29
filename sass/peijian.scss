@@ -65,8 +65,26 @@ section{
 	box-sizing:border-box;
 	.first{
 		height:90px;
-		background:pink;
+		background:white;
 		margin-bottom:20px;
+		border-radius:8px;
+		box-sizing:border-box;
+		padding:26px 0 0 20px;
+		color:#7e7e7e;
+		font-size:12px;
+		div{
+			margin-bottom:16px;
+		}
+		a{
+			color:#7e7e7e;
+			display: inline-block;
+			margin-left:20px;
+			&:hover{
+				color:#eb6118;
+			}
+			
+
+		}
 	}
 	.second{
 		border:1px solid #e3e3e3;
@@ -111,10 +129,9 @@ section{
 			.zzc{
 				width:400px;
 				height:320px;
-				opacity:.4;
-				background:white;
-				display: none;
-				position:relative;
+				opacity:0;
+				background:white; 
+				position:relative;   
 				top:-440px;
 				left:0;
 			}

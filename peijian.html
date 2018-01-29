@@ -8,7 +8,7 @@
 	<meta http-equiv="Cache" content="no-cache">
 
 	<title>Document</title>
-	<link rel="stylesheet" href="css/peijian.css">
+	<link rel="stylesheet" href="css/peijian.css?p=1">
 	<link rel="stylesheet" href="css/common.css"/>
 	<link rel="shortcut icon" href="1.jpg" />
 </head>
@@ -92,7 +92,23 @@
 	</header>
 	<section>
 		<div class="first">
-			
+			<div>
+				<span>适用机型:</span>
+				<a href="">不限</a>
+				<a href="">青橙三好手机</a>
+				<a href="">VOGA手机</a>
+			</div>
+			<div>
+				<span>配件分类:</span>
+				<a href="">全部</a>
+				<a href="">电池</a>
+				<a href="">电源适配器</a>
+				<a href="">贴膜</a>
+				<a href="">保护壳</a>
+				<a href="">耳机与音箱</a>
+				<a href="">支架</a>
+				<a href="">其他</a>
+			</div>
 		</div>
 		<div class="second">
 
@@ -219,7 +235,11 @@ function showgoodsList(datas){
 			$box.append(str);
 			}
 }
-
+$(".f1").mouseenter(function(){
+	$(".zzc").animate(function(){
+		$(this).css({"opacity":".4"});
+	},300);
+});
 window.onscroll=function(){
 	var up=document.getElementById("up");
 	var _top=document.body.scrollTop||document.documentElement.scrollTop;

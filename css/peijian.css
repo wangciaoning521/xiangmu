@@ -50,8 +50,21 @@ section {
   box-sizing: border-box; }
   section .first {
     height: 90px;
-    background: pink;
-    margin-bottom: 20px; }
+    background: white;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 26px 0 0 20px;
+    color: #7e7e7e;
+    font-size: 12px; }
+    section .first div {
+      margin-bottom: 16px; }
+    section .first a {
+      color: #7e7e7e;
+      display: inline-block;
+      margin-left: 20px; }
+      section .first a:hover {
+        color: #eb6118; }
   section .second {
     border: 1px solid #e3e3e3;
     border-radius: 8px;
@@ -88,9 +101,8 @@ section {
       section .second .f1 .zzc {
         width: 400px;
         height: 320px;
-        opacity: .4;
+        opacity: 0;
         background: white;
-        display: none;
         position: relative;
         top: -440px;
         left: 0; }
